@@ -1,0 +1,8 @@
+/Users/george/Documents/Work/MemoryServer/MemoryServer/MemoryServer/bin/Debug/netcoreapp1.1/MemoryServer.deps.json
+/Users/george/Documents/Work/MemoryServer/MemoryServer/MemoryServer/bin/Debug/netcoreapp1.1/MemoryServer.runtimeconfig.json
+/Users/george/Documents/Work/MemoryServer/MemoryServer/MemoryServer/bin/Debug/netcoreapp1.1/MemoryServer.runtimeconfig.dev.json
+/Users/george/Documents/Work/MemoryServer/MemoryServer/MemoryServer/bin/Debug/netcoreapp1.1/MemoryServer.dll
+/Users/george/Documents/Work/MemoryServer/MemoryServer/MemoryServer/bin/Debug/netcoreapp1.1/MemoryServer.pdb
+/Users/george/Documents/Work/MemoryServer/MemoryServer/MemoryServer/obj/Debug/netcoreapp1.1/MemoryServer.AssemblyInfo.cs
+/Users/george/Documents/Work/MemoryServer/MemoryServer/MemoryServer/obj/Debug/netcoreapp1.1/MemoryServer.dll
+/Users/george/Documents/Work/MemoryServer/MemoryServer/MemoryServer/obj/Debug/netcoreapp1.1/MemoryServer.pdb
