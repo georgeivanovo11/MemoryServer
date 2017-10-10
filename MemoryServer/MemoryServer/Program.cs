@@ -17,6 +17,7 @@ namespace MemoryServer
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls("http://localhost:10000/")
                 .Build();
 
             host.Run();

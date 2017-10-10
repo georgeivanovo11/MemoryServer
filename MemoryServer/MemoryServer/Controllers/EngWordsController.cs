@@ -21,10 +21,30 @@ namespace MemoryServer.Controllers
         }
 
         [HttpGet("/api/engwords")]
-        public async Task<IEnumerable<EngWordResource>> GetEngWords()
+        public async Task<IEnumerable<EngWordResource>> GetAllEngWords()
         {
             var engwords = await context.EngWordSet.Include(w => w.PartOfSpeech).ToListAsync();
 
+            return mapper.Map<List<EngWord>,List<EngWordResource>>(engwords);
+        }
+
+        [HttpGet("/api/engwords/find")]
+        public async Task<IEnumerable<EngWordResource>> FindEngWordsBy(string partOfWord)
+        {
+            var allEngwords = await context.EngWordSet.Include(w => w.PartOfSpeech).ToListAsync();
+
+            if(partOfWord==null)
+                return null;
+
+            if(partOfWord=="")
+                return mapper.Map<List<EngWord>,List<EngWordResource>>(allEngwords);
+
+            List <EngWord> engwords = new List<EngWord>();
+            foreach(EngWord word in allEngwords)
+            {
+                if(word.Title.Contains(partOfWord))
+                    engwords.Add(word);
+            }
             return mapper.Map<List<EngWord>,List<EngWordResource>>(engwords);
         }
     }
